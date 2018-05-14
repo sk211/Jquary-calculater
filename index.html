@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquary Calculator</title>
+	<link rel="stylesheet" href="assect/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assect/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assect/css/style.css">	
+</head>
+<body>
+	<div class="card bg-info col-md-4 offset-4 mt-4">
+	<div class="card-header text-light">
+		<h2>Calculater</h2>
+	</div>
+		<form name="forms" class="text-center ">
+	<input type="text" name="answer" placeholder="answer" class="px-3 py-2 mt-4"><br>
+
+	<input  type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+	<input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+	<input type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+	<br>
+	<input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+	<input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+	<input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+	<br>
+	<input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+	<input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+	<input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+	<br>
+	<input type="button" class="" value=" + " onclick="forms.answer.value += '+' ">
+	<input type="button" value=" - " onclick="forms.answer.value += '-' ">
+	<input type="button" value=" * " onclick="forms.answer.value += '*' ">
+	<br>
+	<input type="button" value=" / " onclick="forms.answer.value += '/' ">
+	<input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+	<input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value) ">
+	<br>
+	<div class="card-footrer my-2 ">
+		<input type="button" value="clear" class="btn btn-primary text-light px-5" id="clear" onclick="forms.answer.value = '' ">
+	</div>
+	
+
+</form>
+</div>
+<script src="assect/js/jquary-3.1.1.min.js"></script>
+<script src="assect/js/bootstrap.min.js"></script>
+<script src="assect/js/main.js"></script>
+</body>
+</html>
